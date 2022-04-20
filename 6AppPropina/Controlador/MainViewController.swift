@@ -43,7 +43,9 @@ class MainViewController: UIViewController,UIPickerViewDataSource, UIPickerViewD
 
 //     Slider porcentaje
     @IBAction func SilderPorcentajePropina(_ sender: UISlider) {
-        porcentajePropina = sender.value
+//        Agregada funcion rounded para que evite los decimales y haga bien la operacion para sacar la propina
+        porcentajePropina = sender.value.rounded()
+        print(porcentajePropina)
         porcentajePropinaInt = Int(porcentajePropina)
         labelPorcentaje.text = "\(String(format: "%.0f",porcentajePropina)) %"
     }
@@ -104,9 +106,11 @@ class MainViewController: UIViewController,UIPickerViewDataSource, UIPickerViewD
             labelPorcentaje.text = "0 %"
             sliderPorcentaje.value = 0
             
-
-                
+            //            Con este if ponemos el pickerView en su primer valor si el numPersonas es diferente de 1 quiere decir que el picker no esta en el uno y entonces con el metodo selectRow le indicamos en que lugar y en que componente debe de ponerse al presionar el boton
+            if numeroPersonas != 1{
+                numeroPersonas = 1
+                pickerViewTotalPersonas.selectRow(0, inComponent: 0, animated: true)
             }
             
         }
-
+}

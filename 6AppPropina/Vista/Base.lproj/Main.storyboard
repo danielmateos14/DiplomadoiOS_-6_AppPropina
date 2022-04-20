@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="_AppPropina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Calculadora Propinas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XR-Fm-tSA">
+                                <rect key="frame" x="16" y="20" width="288" height="26.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="PhK-mV-rga">
+                                <rect key="frame" x="16" y="266" width="288" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cuantas personas son ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-eO-yXD">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="24"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="kC1-g3-0hi">
+                                <rect key="frame" x="16" y="150" width="288" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Porcentaje propina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7u-EY-ASp">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="21"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFo-25-721">
+                                        <rect key="frame" x="259" y="0.0" width="29" height="21"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" verticalHuggingPriority="245" translatesAutoresizingMaskIntoConstraints="NO" id="kj8-CA-kfv">
+                                <rect key="frame" x="16" y="315" width="288" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="uf3-fP-0eP"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-4v-ZIk">
+                                <rect key="frame" x="16" y="481" width="288" height="36"/>
+                                <color key="backgroundColor" red="0.90995387838344377" green="0.8822390100504065" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonCalcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geL-aC-VwG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6p-Af-q4s">
+                                <rect key="frame" x="16" y="425" width="288" height="36"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Limpiar">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="botonLimpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCQ-FV-lqD"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="$ Total cuenta" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-nw-L9s">
+                                <rect key="frame" x="65" y="72" width="190" height="38"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="DRZ-4n-kWW">
+                                <rect key="frame" x="14" y="196" width="292" height="31"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <connections>
+                                    <action selector="SilderPorcentajePropina:" destination="BYZ-38-t0r" eventType="valueChanged" id="LNX-wv-q62"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="propinas" translatesAutoresizingMaskIntoConstraints="NO" id="JH5-Ac-YhJ">
+                                <rect key="frame" x="16" y="526" width="288" height="22"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PhK-mV-rga" secondAttribute="trailing" constant="16" id="0Jm-VE-bee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kj8-CA-kfv" secondAttribute="trailing" constant="16" id="6OW-Et-ljp"/>
+                            <constraint firstItem="JH4-4v-ZIk" firstAttribute="top" secondItem="W6p-Af-q4s" secondAttribute="bottom" constant="20" id="7RU-Sb-0Je"/>
+                            <constraint firstItem="kC1-g3-0hi" firstAttribute="top" secondItem="E2f-nw-L9s" secondAttribute="bottom" constant="40" id="AE9-OG-11P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DRZ-4n-kWW" secondAttribute="trailing" constant="16" id="BxJ-nR-mBT"/>
+                            <constraint firstItem="E2f-nw-L9s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="COy-84-25r"/>
+                            <constraint firstItem="kj8-CA-kfv" firstAttribute="top" secondItem="PhK-mV-rga" secondAttribute="bottom" constant="25" id="ISg-QX-pQP"/>
+                            <constraint firstItem="kC1-g3-0hi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KeE-tL-qsi"/>
+                            <constraint firstItem="kj8-CA-kfv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L9Y-Ic-cXg"/>
+                            <constraint firstItem="E2f-nw-L9s" firstAttribute="top" secondItem="8XR-Fm-tSA" secondAttribute="bottom" constant="25.5" id="LTx-HL-2m9"/>
+                            <constraint firstItem="8XR-Fm-tSA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Zj3-zh-oRI"/>
+                            <constraint firstItem="DRZ-4n-kWW" firstAttribute="top" secondItem="kC1-g3-0hi" secondAttribute="bottom" constant="25" id="e49-Ru-WaU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8XR-Fm-tSA" secondAttribute="trailing" constant="16" id="fML-Aw-YfU"/>
+                            <constraint firstItem="JH4-4v-ZIk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fYj-Qd-qmJ"/>
+                            <constraint firstItem="PhK-mV-rga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fe8-YU-foi"/>
+                            <constraint firstItem="JH5-Ac-YhJ" firstAttribute="firstBaseline" secondItem="JH4-4v-ZIk" secondAttribute="baseline" constant="20" id="gWw-si-xFg"/>
+                            <constraint firstItem="W6p-Af-q4s" firstAttribute="top" secondItem="kj8-CA-kfv" secondAttribute="bottom" constant="20" id="i14-bQ-tOp"/>
+                            <constraint firstItem="JH5-Ac-YhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="i5m-UJ-s97"/>
+                            <constraint firstItem="DRZ-4n-kWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="i9O-5L-vOj"/>
+                            <constraint firstItem="W6p-Af-q4s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kyR-38-Wzr"/>
+                            <constraint firstItem="PhK-mV-rga" firstAttribute="top" secondItem="DRZ-4n-kWW" secondAttribute="bottom" constant="40" id="roQ-BR-7pQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JH4-4v-ZIk" secondAttribute="trailing" constant="16" id="slX-UG-XpA"/>
+                            <constraint firstItem="8XR-Fm-tSA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vX5-MU-e7m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E2f-nw-L9s" secondAttribute="trailing" constant="65" id="vYD-BR-iMb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JH5-Ac-YhJ" secondAttribute="trailing" constant="16" id="wCB-RK-HwS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6p-Af-q4s" secondAttribute="trailing" constant="16" id="xhG-Ju-n9K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JH5-Ac-YhJ" secondAttribute="bottom" constant="20" id="y8D-Dr-bNL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kC1-g3-0hi" secondAttribute="trailing" constant="16" id="ye5-RO-mbL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botonCalcular" destination="JH4-4v-ZIk" id="y4w-D2-8JA"/>
+                        <outlet property="labelPorcentaje" destination="eFo-25-721" id="LZa-IG-5rQ"/>
+                        <outlet property="pickerViewTotalPersonas" destination="kj8-CA-kfv" id="xkt-Rc-EPB"/>
+                        <outlet property="sliderPorcentaje" destination="DRZ-4n-kWW" id="OW1-cW-Pxz"/>
+                        <outlet property="txtTotalCuenta" destination="E2f-nw-L9s" id="pZ3-Pz-wYC"/>
+                        <segue destination="uky-z1-HVS" kind="show" identifier="seguePropina" id="uvT-je-Zcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.25" y="83.450704225352112"/>
+        </scene>
+        <!--Pantalla Resultado View Controller-->
+        <scene sceneID="SEF-2t-Sft">
+            <objects>
+                <viewController id="uky-z1-HVS" customClass="PantallaResultadoViewController" customModule="_AppPropina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2C5-Mf-ysd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-104" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1YM-GJ-djy">
+                                <rect key="frame" x="16" y="59" width="288" height="433"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Tu propina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZY-nI-Abg">
+                                        <rect key="frame" x="84.5" y="0.0" width="119.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="75Q-8d-dV6">
+                                        <rect key="frame" x="0.0" y="-79" width="288" height="512"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peso" translatesAutoresizingMaskIntoConstraints="NO" id="Wjc-ux-CmB">
+                                                <rect key="frame" x="0.0" y="0.0" width="141" height="512"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="I7l-kb-VQa">
+                                                <rect key="frame" x="147" y="211.5" width="141" height="89"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="149.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHB-Wd-CgE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="33"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pesos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c69-c3-JrT">
+                                                        <rect key="frame" x="0.0" y="56" width="141" height="33"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-Hy-2mm">
+                                <rect key="frame" x="16" y="380" width="288" height="40.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cerrar">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="botonCerrar:" destination="uky-z1-HVS" eventType="touchUpInside" id="QCI-5c-toP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-40-GnG">
+                                <rect key="frame" x="16" y="416" width="288" height="112"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="al4-B4-dv9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G8D-40-GnG" firstAttribute="leading" secondItem="al4-B4-dv9" secondAttribute="leading" constant="16" id="4Bn-PD-Qfk"/>
+                            <constraint firstItem="A4t-Hy-2mm" firstAttribute="top" secondItem="1YM-GJ-djy" secondAttribute="bottom" constant="-112" id="JJo-yN-Av1"/>
+                            <constraint firstItem="1YM-GJ-djy" firstAttribute="leading" secondItem="al4-B4-dv9" secondAttribute="leading" constant="16" id="LU1-6n-gb6"/>
+                            <constraint firstItem="G8D-40-GnG" firstAttribute="firstBaseline" secondItem="A4t-Hy-2mm" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="Ncq-Gk-JVz"/>
+                            <constraint firstItem="al4-B4-dv9" firstAttribute="trailing" secondItem="A4t-Hy-2mm" secondAttribute="trailing" constant="16" id="Rf4-Mb-y7W"/>
+                            <constraint firstAttribute="trailing" secondItem="1YM-GJ-djy" secondAttribute="trailing" constant="16" id="TDY-Py-68Q"/>
+                            <constraint firstItem="1YM-GJ-djy" firstAttribute="top" secondItem="al4-B4-dv9" secondAttribute="top" constant="59" id="Xaf-v8-l75"/>
+                            <constraint firstItem="al4-B4-dv9" firstAttribute="bottom" secondItem="G8D-40-GnG" secondAttribute="bottom" constant="20" id="cEf-iH-L2R"/>
+                            <constraint firstItem="al4-B4-dv9" firstAttribute="trailing" secondItem="G8D-40-GnG" secondAttribute="trailing" constant="16" id="oeE-KS-XVN"/>
+                            <constraint firstItem="A4t-Hy-2mm" firstAttribute="leading" secondItem="al4-B4-dv9" secondAttribute="leading" constant="16" id="yyH-K8-Bjs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="71x-Od-drG"/>
+                    <connections>
+                        <outlet property="labelResultado" destination="kHB-Wd-CgE" id="c96-mx-htd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yk9-gY-cng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="peso" width="512" height="512"/>
+        <image name="propinas" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
